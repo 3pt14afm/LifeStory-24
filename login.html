@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left-section">
+        <div class="form-container">
+            <div class="form-box" id="loginBox">
+                <div class="toggle">
+                    <button class="active" onclick="showLogin()">Login</button>
+                    <button onclick="showSignup()">Sign Up</button>
+                </div>
+                <h2>Log In</h2>
+                <div class="icons">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <p>or use your email account:</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="lgnbtn" onclick="openArticle('index.html')">Log In</button>
+            </div>
+            <div class="form-box" id="signupBox" style="display: none;">
+                <div class="toggle">
+                    <button onclick="showLogin()">Login</button>
+                    <button class="active" onclick="showSignup()">Sign Up</button>
+                </div>
+                <h2>Sign Up</h2>
+                <div class="icons">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <p>or use your email for registration:</p>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="lgnbtn" onclick="openArticle('index.html')">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="right-section">
+        <!-- Placeholder for the image background -->
+    </div>
+</div>
+<footer>&copy; 2025 Pia Flor Monteron. All Rights Reserved.</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
